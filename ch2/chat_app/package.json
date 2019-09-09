@@ -1,0 +1,9 @@
+{
+    "name": "chat",
+    "versdion": "",
+    "description": "first node.js",
+    "dependencies": {
+        "mime": "^1.2.7",
+        "socket.io": "^2.2.0"
+    }
+}
