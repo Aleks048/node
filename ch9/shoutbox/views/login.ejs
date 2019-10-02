@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+    <head>
+        <title><%=title%></title>
+        <link rel="stylesheet" href="/stylesheets/style.css"/>
+    </head>
+    <body>
+        <% include menu %>
+
+        <form action ="/login" method="POST">
+            <p>Username<input name="user[name]" type="text"/></p>
+            <p>password<input name="user[pass]" type="password"/></p>
+            <p><input type="submit" value="S submit"/></p>
+        </form>
+    </body>
+</html>

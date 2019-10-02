@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title%></title>
+        <link rel="stylesheet" href="/stylesheets/style.css"/>
+    </head>
+    <body>
+        <% include menu %><!-- including other templates-->
+        <h1><%=title%></h1>
+        <p>Fill the form to signup</p>
+
+        <% include messages %>
+        <form action="/register" method="POST">
+            <p>
+                <input type="text" name="user[name]" placeholder="U Username"/>
+            </p>
+            <p>
+                <input type="password" name="user[pass]" placeholder="P Pass"/>
+            </p>
+            <p>
+                <input type="submit" value="s Submit"/>
+            </p>
+        </form>
+    </body>
+</html>
